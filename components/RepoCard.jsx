@@ -1,5 +1,5 @@
 import styles from "../styles/RepoCard.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 
 const RepoCard = ({ repo }) => {
   return (

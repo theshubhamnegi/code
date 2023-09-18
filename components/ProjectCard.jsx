@@ -1,5 +1,5 @@
 import styles from "../styles/ProjectCard.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 
 const ProjectCard = ({ project }) => {
   return (
