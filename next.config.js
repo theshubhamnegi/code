@@ -1,5 +1,5 @@
 module.exports = {
-  basePath: '/code'
+  basePath: '/code',
   images: {
     domains: [
       'res.cloudinary.com',
