@@ -76,7 +76,6 @@ const Explorer = () => {
                   alt={item.name}
                   height={18}
                   width={18}
-
                 />
                 {' '}
                 <p>{item.name}</p>
