@@ -1,0 +1,106 @@
+.mastheadheading,
+.mastheadintro {
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: url('https://i.imgur.com/yGmrlyg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #FFCF33;
+}
+
+.mastheadintro {
+    /* Layout Declarations */
+    margin-bottom: 0.1em;
+    /* Typography Declarations */
+    font-size: 2em;
+}
+
+.mastheadheading {
+    /* Layout Declarations */
+    color: var(--accent-color);
+    margin-top: -0.2em;
+    /* Typography Declarations */
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.introductionsection,
+.locationsection,
+.questionssection {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.introductionsection > h1,
+.locationsection > h1,
+.questionssection > h1 {
+  color: var(--accent-color);
+}
+
+.introductionsection > p,
+.locationsection > p,
+.questionssection{
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.questionssection > h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    /* Layout */
+    margin: 2em 0 1em 0;
+    color: var(--accent-color);
+}
+
+
+
+.mastheadheading,
+.mastheadintro {
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: url('https://i.imgur.com/yGmrlyg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #FFCF33;
+}
+
+.mastheadintro {
+  margin-bottom: 0.1em;
+    font-size: 2em;
+}
+
+.mastheadheading {
+  margin-top: -0.2em;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.introduction > p,
+.location > p,
+.contentfooter > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+
+.introductionsection,
+.locationsection,
+.questionssection {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}

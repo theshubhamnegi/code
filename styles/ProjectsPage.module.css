@@ -1,0 +1,33 @@
+.container {
+  margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem 0 1rem;
+}
+
+.searchbox{
+  margin: 0 0 1rem;
+  margin: 0.5rem 0 1rem;
+  height: 2rem;
+  background: var(--explorer-bg);
+  border-radius: 10px;
+  border: 2px solid var(--explorer-bg);
+  padding: 1.5rem 1rem;
+  font-size: larger;
+  color: var(--accent-color);
+}
+
+.searchbox:focus {
+  outline: none;
+  border: 2px solid var(--accent-color);
+}
+
+.searchbox::placeholder {
+  color: var(--accent-color);
+}

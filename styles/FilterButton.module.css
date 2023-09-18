@@ -1,0 +1,33 @@
+.filterButton {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--clr-grey-3);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.filterButton:hover {
+  background: var(--clr-grey-8);
+  color: var(--clr-grey-1);
+}
+
+.filterButton > span {
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+.web {
+  border: 2px solid aqua;
+  border-radius: 50rem;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+}
+
+.filterButton > input {
+  display: none;
+}
