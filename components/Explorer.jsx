@@ -8,32 +8,32 @@ const explorerItems = [
   {
     name: 'home.jsx',
     path: '/',
-    icon: './react_icon.svg',
+    icon: './react_icon.png',
   },
   {
     name: 'about.html',
     path: '/about',
-    icon: './html_icon.svg',
+    icon: './html_icon.png',
   },
   {
     name: 'contact.css',
     path: '/contact',
-    icon: './css_icon.svg',
+    icon: './css_icon.png',
   },
   {
     name: 'projects.js',
     path: '/projects',
-    icon: './js_icon.svg',
+    icon: './js_icon.png',
   },
   {
     name: 'certificate.json',
     path: '/certificate',
-    icon: './json_icon.svg',
+    icon: './json_icon.png',
   },
   {
     name: 'github_skills.md',
     path: '/github',
-    icon: './markdown_icon.svg',
+    icon: './markdown_icon.png',
   },
 ];
 
