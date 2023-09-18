@@ -11,7 +11,8 @@ const Tab = ({ icon, filename, path }) => {
       <div
         className={`${styles.tab} ${router.pathname === path && styles.active}`}
       >
-        <Image src={icon} alt={filename} height={18} width={18} />
+        {/* <Image src={icon} alt={filename} height={18} width={18} /> */}
+        <img src={icon} alt={filename} height={18} width={18} />
         <p>{filename}</p>
       </div>
     </Link>

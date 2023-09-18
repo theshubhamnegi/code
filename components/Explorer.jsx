@@ -65,12 +65,20 @@ const Explorer = () => {
           {explorerItems.map((item) => (
             <Link href={item.path} key={item.name}>
               <div className={styles.file}>
-                <Image
+                {/* <Image
                   src={`/${item.icon}`}
                   alt={item.name}
                   height={18}
                   width={18}
-                />{' '}
+                  /> */}
+                <img
+                  src={`/${item.icon}`}
+                  alt={item.name}
+                  height={18}
+                  width={18}
+
+                />
+                {' '}
                 <p>{item.name}</p>
               </div>
             </Link>

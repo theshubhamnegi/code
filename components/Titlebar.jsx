@@ -4,7 +4,14 @@ import styles from "../styles/Titlebar.module.css";
 const Titlebar = () => {
   return (
     <section className={styles.titlebar}>
-      <Image
+      {/* <Image
+        src="/vscode_icon.svg"
+        alt="VSCode Icon"
+        height={15}
+        width={15}
+        className={styles.icon}
+      /> */}
+      <img
         src="/vscode_icon.svg"
         alt="VSCode Icon"
         height={15}
