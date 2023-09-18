@@ -1,6 +1,6 @@
 module.exports = {
-  basePath: '/code',
   images: {
+    basePath: 'code',
     domains: [
       'res.cloudinary.com',
       'avatars.githubusercontent.com',
