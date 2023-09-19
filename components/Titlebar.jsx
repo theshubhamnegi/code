@@ -12,7 +12,7 @@ const Titlebar = () => {
         className={styles.icon}
       /> */}
       <img
-        src="/vscode_icon.svg"
+        src="https://raw.githubusercontent.com/Shubham180401/code/main/public/favicon.ico"
         alt="VSCode Icon"
         height={15}
         width={15}
