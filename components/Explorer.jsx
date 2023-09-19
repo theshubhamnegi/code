@@ -8,32 +8,38 @@ const explorerItems = [
   {
     name: 'home.jsx',
     path: '/',
-    icon: 'react_icon.png',
+    // icon: 'react_icon.png',
+    icon: 'https://raw.githubusercontent.com/Shubham180401/code/main/public/react_icon.png',
   },
   {
     name: 'about.html',
     path: '/about',
-    icon: 'html_icon.png',
+    // icon: 'html_icon.png',
+    icon: 'https://raw.githubusercontent.com/Shubham180401/code/main/public/html_icon.png',
   },
   {
     name: 'contact.css',
     path: '/contact',
-    icon: 'css_icon.png',
+    // icon: 'css_icon.png',
+    icon: 'https://raw.githubusercontent.com/Shubham180401/code/main/public/css_icon.png',
   },
   {
     name: 'projects.js',
     path: '/projects',
-    icon: 'js_icon.png',
+    // icon: 'js_icon.png',
+    icon: 'https://raw.githubusercontent.com/Shubham180401/code/main/public/js_icon.png',
   },
   {
     name: 'certificate.json',
     path: '/certificate',
-    icon: 'json_icon.png',
+    // icon: 'json_icon.png',
+    icon: 'https://raw.githubusercontent.com/Shubham180401/code/main/public/json_icon.png',
   },
   {
     name: 'github_skills.md',
     path: '/github',
-    icon: 'markdown_icon.png',
+    // icon: 'markdown_icon.png',
+    icon: 'https://raw.githubusercontent.com/Shubham180401/code/main/public/markdown_icon.png',
   },
 ];
 
@@ -72,7 +78,8 @@ const Explorer = () => {
                   width={18}
                   /> */}
                 <img
-                  src={`/${item.icon}`}
+                  // src={`/${item.icon}`}
+                  src={item.icon}
                   alt={item.name}
                   height={18}
                   width={18}
