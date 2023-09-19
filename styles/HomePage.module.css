@@ -109,7 +109,7 @@
 .illustration_svg{
   transform-origin: right bottom;
   position: relative;
-  animation: rotate 10s linear infinite;
+  animation: rotate 30s linear infinite;
 }
 @keyframes rotate {
   0% {
