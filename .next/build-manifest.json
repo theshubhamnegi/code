@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/github": [
+    "/certificate": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/github.js"
+      "static/chunks/pages/certificate.js"
     ],
     "/projects": [
       "static/chunks/webpack.js",
