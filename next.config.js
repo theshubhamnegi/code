@@ -1,6 +1,8 @@
 module.exports = {
+  reactStrictMode: true,
+  basePath: '/code',
   images: {
-    basePath: 'code',
+    basePath: '/code',
     domains: [
       'res.cloudinary.com',
       'avatars.githubusercontent.com',
