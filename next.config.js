@@ -12,4 +12,5 @@ module.exports = {
       'media.licdn.com',
     ],
   },
+  reactStrictMode: false;
 };
