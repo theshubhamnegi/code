@@ -58,6 +58,16 @@ const ContactCode = () => {
         </p>
       ))}
       <p className={styles.line}>&#125;</p>
+      <p className={styles.line}>&#125;</p>
+      <p className={styles.line}>
+        <span className={styles.className}>.resume</span> &#123;
+      </p>
+      <p className={styles.line}>&nbsp;&nbsp;&nbsp;resume: 
+        <a href="./ShubhamResume.pdf" download="ShubhamResume.pdf">
+          resume.pdf
+        </a>
+      </p>
+      <p className={styles.line}>&#125;</p>
     </div>
   );
 };
