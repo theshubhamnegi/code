@@ -1,6 +1,8 @@
 // import Image from "next/image";
 import styles from "../styles/Titlebar.module.css";
 
+import vscode from "../public/vscode_icon.png";
+
 const Titlebar = () => {
   return (
     <section className={styles.titlebar}>
@@ -12,7 +14,9 @@ const Titlebar = () => {
         className={styles.icon}
       /> */}
       <img
-        src="https://raw.githubusercontent.com/Shubham180401/code/main/public/favicon.ico"
+      unoptimized
+        // src="https://raw.githubusercontent.com/Shubham180401/code/main/public/favicon.ico"
+        src = {vscode}
         alt="VSCode Icon"
         height={15}
         width={15}
