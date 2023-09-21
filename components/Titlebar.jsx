@@ -15,8 +15,8 @@ const Titlebar = () => {
       /> */}
       <img
         unoptimized
-        src="https://raw.githubusercontent.com/Shubham180401/code/main/public/favicon.ico"
-        // src = "vscode_icon.svg"
+        // src="https://raw.githubusercontent.com/Shubham180401/code/main/public/favicon.ico"
+        src = "vscode_icon.png"
         alt="VSCode Icon"
         height={15}
         width={15}
