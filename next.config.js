@@ -12,5 +12,6 @@ module.exports = {
       'media.licdn.com',
     ],
   },
+  output: "standalone",
   reactStrictMode: false,
 };
