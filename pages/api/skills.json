@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Python",
+    "cover_image": "https://cdn-icons-png.flaticon.com/512/3098/3098090.png",
+    "description": "In python i have done many projects like web scraping, data analysis, data visualization, machine learning, etc."
+  },
+  {
+    "id": 2,
+    "name": "C++",
+    "cover_image": "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
+    "description": "In C++ i have done some projects like calculator, tic tac toe, snake game, and more."
+  },
+  {
+    "id": 3,
+    "name": "React.JS",
+    "cover_image": "https://cdn-icons-png.flaticon.com/512/1126/1126012.png",
+    "description": "In ReactJS i have done some projects like portfolio, todo app, etc. Even this website is made in ReactJS over NextJS."
+  },
+  {
+    "id": 4,
+    "name": "The Arrow",
+    "cover_image": "https://cdn-icons-png.flaticon.com/512/7506/7506880.png",
+    "description": "In SQL i have done some projects like database management of school, college and for my other applications."
+  }
+]

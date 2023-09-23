@@ -2,7 +2,7 @@
   {
     "id": 1,
     "type": "web",
-    "name": "The Arrow",
+    "name": "The web",
     "image": "https://raw.githubusercontent.com/Shubham180401/landingPage/main/certificate/images/sampleProject.jpg",
     "description": "A platform for web developers to showcase their projects",
     "tags": ["node", "next", "mongodb", "tailwind", "react-query"],
@@ -12,8 +12,8 @@
   {
     "type": "python",
     "id": 2,
-    "name": "The Arrow",
-    "image": "https://imgur.com/tAZotn3.png",
+    "name": "The python",
+    "image": "https://raw.githubusercontent.com/Shubham180401/landingPage/main/certificate/images/sampleProject.jpg",
     "description": "A platform for web developers to showcase their projects",
     "tags": ["react", "node", "mongodb", "redux", "razorpay", "material-ui"],
     "source_code": "https://github.com/wrake/TheArrow",
@@ -22,8 +22,8 @@
   {
     "id": 3,
     "type": "cpp",
-    "name": "The Arrow",
-    "image": "https://imgur.com/8FFqaX8.png",
+    "name": "The cpp",
+    "image": "https://raw.githubusercontent.com/Shubham180401/landingPage/main/certificate/images/sampleProject.jpg",
     "description": "A platform for web developers to showcase their projects",
     "tags": ["react", "node", "mongodb", "redux", "razorpay", "material-ui"],
     "source_code": "https://github.com/wrake/TheArrow",
@@ -32,8 +32,8 @@
   {
     "id": 4,
     "type": "aiml",
-    "name": "The Arrow",
-    "image": "https://imgur.com/mKkz0iz.png",
+    "name": "The aiml",
+    "image": "https://raw.githubusercontent.com/Shubham180401/landingPage/main/certificate/images/sampleProject.jpg",
     "description": "A platform for web developers to showcase their projects",
     "tags": ["next", "css-modules"],
     "source_code": "https://github.com/wrake/TheArrow",

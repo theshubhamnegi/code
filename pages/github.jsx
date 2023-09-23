@@ -1,8 +1,8 @@
-import RepoCard from '../components/RepoCard';
-import { getRepos } from './api/repos';
+import SkillCard from '../components/SkillCard';
+import { getRepos } from './api/skills';
 import styles from '../styles/GithubPage.module.css';
 
-const GithubPage = ({ repos, user }) => {
+const GithubPage = ({ skills, user }) => {
   return (
     <>
       <div className={styles.user}>
@@ -18,8 +18,8 @@ const GithubPage = ({ repos, user }) => {
       </div>
     <h3>Stuff I've Learnt So Far</h3>
       <div className={styles.container}>
-        {repos.map((repo) => (
-          <RepoCard key={repo.id} repo={repo} />
+        {skills.map((skill) => (
+          <SkillCard key={skill.id} repo={skill} />
         ))}
       </div>
       <div className={styles.contributions}>
@@ -29,10 +29,10 @@ const GithubPage = ({ repos, user }) => {
 };
 
 export async function getStaticProps() {
-  const repos = getRepos();
+  const skills = getRepos();
 
   return {
-    props: { title: 'repos', repos },
+    props: { title: 'skills', skills },
   };
 }
 

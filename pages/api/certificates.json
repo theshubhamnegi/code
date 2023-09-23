@@ -1,39 +1,34 @@
 [
-    {
-      "id": 1,
-      "type": "web",
-      "name": "github",
-      "title": "github",
-      "url": "https://stackoverflow.com/questions/65632698/how-to-open-a-link-in-a-new-tab-in-nextjs",
-      "cover_image": "https://media.licdn.com/dms/image/D4D1FAQFaluuKHdRlRA/feedshare-document-images_480/1/1691247087783?e=1695859200&v=beta&t=SYQJsYjwFxRFRz_1rEBDwvyoEd2ADFk9kLOgGCUrono",
-      "description": "image is imported from github And onclick it redirect to stackoverflow"
-    },
-    {
-      "id": 2,
-      "type": "python",
-      "name": "linkedin",
-      "title": "linkedin",
-      "url": "https://www.linkedin.com/posts/shubham-negi-gigacoder_introduction-to-relational-databases-in-sql-activity-7072988943780069376-4atL?utm_source=share&utm_medium=member_desktop",
-      "cover_image": "https://media.licdn.com/dms/image/D4D1FAQFEmpvW5xqISQ/feedshare-document-images_480/1/1687269189687?e=1695859200&v=beta&t=xG-v2zEMtFvm8xPZ96jTFmC1czk3qwC-TK2RHDyOUCM",
-      "description": "image is imported from github And onclick it redirect to stackoverflow"
-    },
-    {
-      "id": 3,
-      "type": "cpp",
-      "name": "github",
-      "title": "github",
-      "url": "www.google.com",
-      "cover_image": "https://media.licdn.com/dms/image/D4D1FAQFEmpvW5xqISQ/feedshare-document-images_480/1/1687269189687?e=1695859200&v=beta&t=xG-v2zEMtFvm8xPZ96jTFmC1czk3qwC-TK2RHDyOUCM",
-      "description": "image is imported from github And onclick it redirect to stackoverflow"
-    },
-    {
-      "id": 4,
-      "type": "aiml",
-      "name": "linkedin",
-      "title": "linkedin",
-      "url": "https://www.youtube.com/",
-      "cover_image": "https://media.licdn.com/dms/image/D4D1FAQFEmpvW5xqISQ/feedshare-document-images_480/1/1687269189687?e=1695859200&v=beta&t=xG-v2zEMtFvm8xPZ96jTFmC1czk3qwC-TK2RHDyOUCM",
-      "description": "image is imported from github And onclick it redirect to stackoverflow"
-    } 
+  {
+    "id": 1,
+    "type": "web",
+    "title": "web",
+    "url": "https://stackoverflow.com/questions/65632698/how-to-open-a-link-in-a-new-tab-in-nextjs",
+    "cover_image": "https://media.licdn.com/dms/image/D4D1FAQFaluuKHdRlRA/feedshare-document-images_480/1/1691247087783?e=1695859200&v=beta&t=SYQJsYjwFxRFRz_1rEBDwvyoEd2ADFk9kLOgGCUrono",
+    "description": "image is imported from github And onclick it redirect to stackoverflow"
+  },
+  {
+    "id": 2,
+    "type": "python",
+    "title": "python",
+    "url": "https://www.linkedin.com/posts/shubham-negi-gigacoder_introduction-to-relational-databases-in-sql-activity-7072988943780069376-4atL?utm_source=share&utm_medium=member_desktop",
+    "cover_image": "https://media.licdn.com/dms/image/D4D1FAQFEmpvW5xqISQ/feedshare-document-images_480/1/1687269189687?e=1695859200&v=beta&t=xG-v2zEMtFvm8xPZ96jTFmC1czk3qwC-TK2RHDyOUCM",
+    "description": "image is imported from github And onclick it redirect to stackoverflow"
+  },
+  {
+    "id": 3,
+    "type": "cpp",
+    "title": "cpp",
+    "url": "www.google.com",
+    "cover_image": "https://media.licdn.com/dms/image/D4D1FAQFEmpvW5xqISQ/feedshare-document-images_480/1/1687269189687?e=1695859200&v=beta&t=xG-v2zEMtFvm8xPZ96jTFmC1czk3qwC-TK2RHDyOUCM",
+    "description": "image is imported from github And onclick it redirect to stackoverflow"
+  },
+  {
+    "id": 4,
+    "type": "aiml",
+    "title": "aiml",
+    "url": "https://www.youtube.com/",
+    "cover_image": "https://media.licdn.com/dms/image/D4D1FAQFEmpvW5xqISQ/feedshare-document-images_480/1/1687269189687?e=1695859200&v=beta&t=xG-v2zEMtFvm8xPZ96jTFmC1czk3qwC-TK2RHDyOUCM",
+    "description": "image is imported from github And onclick it redirect to stackoverflow"
+  }
 ]
-  
