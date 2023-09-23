@@ -27,7 +27,7 @@
 
 .image{
   height: auto;
-  width: 100%;
+  width: 50%;
   object-fit: cover;
   display: block;
   border-radius: 5px;
