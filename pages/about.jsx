@@ -7,40 +7,32 @@ const AboutPage = () => {
       <br />
       <h7>this section is under development so wait for it.</h7>
 
-      <header className={styles.masthead}>Name
+      <header className={styles.masthead}>
         <p className={styles.mastheadintro}>Hi I'm</p>
         <h1 className={styles.mastheadheading}>Wrake</h1>
       </header>
       <section className={styles.introductionsection}>
         <h1>Introduction</h1>
         <p>
-          I am a construction business owner, part time marketer, and soon to be
-          web developer.
+          A passionate visionary young developer who offers fresh ideas and an innovative perspective on technology with an unusual perspective and enjoys bringing innovative solutions to the table.
         </p>
-        <p>I love the internet, technology, and building beautiful things.</p>
-      </section>
-      <section className={styles.locationsection}>
-        <h1>Where I'm From</h1>
-        <p>I'm originally from Toronto, Ontario. </p>
+        <p>
+          I love the internet, technology, and building beautiful things.
+        </p>
       </section>
       <section className={styles.questionssection}>
         <h1>More About Me</h1>
-        <h2>What are your favorite hobbies?</h2>
+        <h2>What you do in free time?</h2>
         <p>
-          My favorite hobby is building things on the internet like ecommerce
-          sites and email marketing campaigns.
+          In my free time, I watch anime, play games, read some books (E-Books), and think about why I got errors in code and how to solve them.
         </p>
-        <h2>What's your dream job?</h2>
+        <h2>Why you start programming?</h2>
         <p>
-          My dream job is similar to my current job except I would like to be
-          building software instead of buildings.
+          Making something new is the most fascinating thing and for me when I create an Excel file for the computer lab it amuses me. and later by landing some fingers on the keyboard I jumped on programming.  
         </p>
-        <h2>Where do you live?</h2>
-        <p>I live on a rural acreage, but I'm close to Ottawa and Montreal.</p>
-        <h2>Why do you want to be a web developer?</h2>
+        <h2>Why do you want to be a Data Scientist?</h2>
         <p>
-          Because programming is awesome and programming for the internet is
-          even more awesome.
+          Every time I work with data, I discover something that surprises me. In spite of that, Uncollected data, though, surprises me the most, because it can be something totally different that can turn everything around.
         </p>
       </section>
     </>

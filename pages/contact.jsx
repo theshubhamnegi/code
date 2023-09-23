@@ -34,7 +34,7 @@ const ContactPage = () => {
       </div>
       <div>
         <h3 className={styles.heading}>Or Fill Out This Form</h3>
-        <h5 className={styles.heading}>currently not working.</h5>
+        <h5 className={styles.heading}>currently under upadation.</h5>
         <form className={styles.form} onSubmit={submitForm}>
           <div className={styles.flex}>
             <div>

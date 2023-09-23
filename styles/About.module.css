@@ -5,10 +5,11 @@
 
 .masthead {
   padding: 6em 0;
-  background-image: url('https://i.imgur.com/yGmrlyg.jpg');
+  /* background-image: url('https://i.imgur.com/yGmrlyg.jpg'); */
+  /* background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/5438.jpg'); */
+  background-image: url('https://img.myloview.com/posters/luxury-gold-abstr…kaging-web-banner-app-wallpaper-700-260063546.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  border-top: solid 1em #FFCF33;
 }
 
 .mastheadintro {
@@ -30,7 +31,6 @@
 }
 
 .introductionsection,
-.locationsection,
 .questionssection {
     max-width: 38em;
     margin-left: auto;
@@ -39,13 +39,11 @@
 }
 
 .introductionsection > h1,
-.locationsection > h1,
 .questionssection > h1 {
   color: var(--accent-color);
 }
 
 .introductionsection > p,
-.locationsection > p,
 .questionssection{
     /* Typography Declarations */
     font-weight: 300;
@@ -67,13 +65,7 @@
   text-align: center;
 }
 
-.masthead {
-  padding: 6em 0;
-  background-image: url('https://i.imgur.com/yGmrlyg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-top: solid 1em #FFCF33;
-}
+
 
 .mastheadintro {
   margin-bottom: 0.1em;
@@ -88,7 +80,6 @@
   text-transform: uppercase;
 }
 .introduction > p,
-.location > p,
 .contentfooter > p {
     /* Typography Declarations */
     font-weight: 300;
@@ -97,7 +88,6 @@
 
 
 .introductionsection,
-.locationsection,
 .questionssection {
     max-width: 38em;
     margin-left: auto;
