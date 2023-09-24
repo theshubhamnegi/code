@@ -23,7 +23,7 @@
     "id": 3,
     "type": "cpp",
     "name": "The cpp",
-    "image": "https://raw.githubusercontent.com/Shubham180401/landingPage/main/certificate/images/sampleProject.jpg",
+    "image": "https://github.com/Shubham180401/Virtual-Painter/blob/main/Virtual%20Paint.png?raw=true",
     "description": "A platform for web developers to showcase their projects",
     "tags": ["react", "node", "mongodb", "redux", "razorpay", "material-ui"],
     "source_code": "https://github.com/wrake/TheArrow",
