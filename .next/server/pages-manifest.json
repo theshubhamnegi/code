@@ -2,10 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/contact": "pages/contact.js",
-  "/certificate": "pages/certificate.js",
-  "/github": "pages/github.js",
+  "/": "pages/index.js",
   "/projects": "pages/projects.js",
-  "/about": "pages/about.js",
-  "/": "pages/index.js"
+  "/certificate": "pages/certificate.js",
+  "/github": "pages/github.js"
 }
