@@ -14,5 +14,5 @@ module.exports = {
   },
   basePath: "www.github.com/",
   output: "standalone",
-  reactStrictMode: false,
+  reactStrictMode: true,
 };
