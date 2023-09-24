@@ -1,6 +1,7 @@
 module.exports = {
+  basePath: '/code',
   images: {
-    // basePath: 'code',
+    basePath: '/code',
     domains: [
       'res.cloudinary.com',
       'avatars.githubusercontent.com',
@@ -12,6 +13,6 @@ module.exports = {
       'media.licdn.com',
     ],
   },
-  // output: "standalone",
+  output: "standalone",
   reactStrictMode: false,
 };
