@@ -10,8 +10,6 @@ module.exports = {
       'raw.githubusercontent.com',
       'www.linkedin.com',
       'media.licdn.com',
-      'pbs.twimg.com',
-      'github.com/shubham180401',
     ],
   },
   output: "standalone",
