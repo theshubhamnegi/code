@@ -13,8 +13,8 @@ const ProjectCard = ({ project }) => {
       />   */}
       <img 
         src={project.image} 
-        height={170} 
-        width={200} 
+        // height={170} 
+        // width={200} 
         alt={project.name} 
         className={styles.image}
       />                    

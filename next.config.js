@@ -10,7 +10,6 @@ module.exports = {
       'raw.githubusercontent.com',
       'www.linkedin.com',
       'media.licdn.com',
-      'https://Shubham180401.github.io/landingPage/',
     ],
   },
   output: "standalone",
