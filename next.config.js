@@ -3,7 +3,7 @@ module.exports = {
     domains: [
       'res.cloudinary.com',
       'avatars.githubusercontent.com',
-      'imgur.com',
+      // 'imgur.com',
       'drive.google.com',
       'images.app.goo.gl',
       'raw.githubusercontent.com',
