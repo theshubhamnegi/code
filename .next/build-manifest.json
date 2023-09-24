@@ -25,11 +25,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/certificate": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/certificate.js"
-    ],
     "/github": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
