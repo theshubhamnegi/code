@@ -54,7 +54,8 @@ const SettingsPage = () => {
         <ThemeInfo
           name="Night Owl"
           // icon="/night-owl.png"
-          icon="https://raw.githubusercontent.com/Shubham180401/code/main/public/night-owl.png"
+          icon="night-owl.png"
+          // icon="https://raw.githubusercontent.com/Shubham180401/code/main/public/night-owl.png"
           publisher="sarah.drasner"
           theme="night-owl"
           description="A VS Code theme for the night owls out there."
