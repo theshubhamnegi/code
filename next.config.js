@@ -1,7 +1,10 @@
 module.exports = {
   basePath: '/code',
   images: {
-    basePath: '/code',
+    basePath: [
+      '/code',
+      'https://github.com/Shubham180401/Virtual-Painter',
+    ],
     domains: [
       'res.cloudinary.com',
       'avatars.githubusercontent.com',
