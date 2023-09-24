@@ -3,7 +3,7 @@
     "id": 1,
     "type": "web",
     "name": "The web",
-    "image": "raw.githubusercontent.com/Shubham180401/landingPage/main/certificate/images/sampleProject.jpg",
+    "image": "https://raw.githubusercontent.com/Shubham180401/landingPage/main/certificate/images/sampleProject.jpg",
     "description": "A platform for web developers to showcase their projects",
     "tags": ["node", "next", "mongodb", "tailwind", "react-query"],
     "source_code": "https://github.com/wrake/TheArrow",
