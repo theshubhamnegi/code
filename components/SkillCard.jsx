@@ -7,7 +7,7 @@ const RepoCard = ({ repo }) => {
       <div>
         <p className={styles.imageCover}>
           {/* <Image
-            src={repo.cover_image}
+            src={repo.coverImage}
             alt={repo.title}
             width={255}
             height={150}
