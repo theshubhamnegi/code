@@ -13,8 +13,8 @@ const RepoCard = ({ repo }) => {
             height={150}
           /> */}
           <img 
-            src={repo.cover_image}
-            alt={repo.name}
+            src={repo.coverImage}
+            alt="certificate failed to load :("
             width={255}
             height={150}
             className={styles.image}

@@ -1,3 +1,4 @@
+// this is for only image tag
 module.exports = {
   basePath: '/code',
   images: {

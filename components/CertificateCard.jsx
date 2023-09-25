@@ -19,6 +19,7 @@ const CertificateCard = ({ certificate }) => {
       ></iframe> */}
       <img 
         src={certificate.cover_image} 
+        alt="certificate failed to load :("
         className={styles.image}
       />
       <div className={styles.content}>

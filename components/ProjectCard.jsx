@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
         src={project.image} 
         height={170} 
         width={200} 
-        alt={project.name} 
+        alt={project.name + " is failed to load the image. Refresh the page or click on the card for detail"} 
         className={styles.image}
       />                    
       <div className={styles.content}>
