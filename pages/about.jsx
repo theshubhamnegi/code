@@ -34,6 +34,7 @@ const AboutPage = () => {
         <p>
           Every time I work with data, I discover something that surprises me. In spite of that, Uncollected data, though, surprises me the most, because it can be something totally different that can turn everything around.
         </p>
+        <h7>this is the little bit about me for more or chat see the contact section.</h7>
       </section>
     </>
   );

@@ -27,7 +27,7 @@ const ContactPage = () => {
       setMessage('');
     } else {
       setSubmissionStatus('error');
-      alert('Your response has not been received!');
+      alert('Your response has not been received! please try again.');
     }
 
     // Clear the submission status after 5 seconds
@@ -44,7 +44,6 @@ const ContactPage = () => {
       </div>
       <div>
         <h3 className={styles.heading}>Or Fill Out This Form</h3>
-        <h5 className={styles.heading}>currently under upadation.</h5>
         <form method='POST' className={styles.form} onSubmit={handleFormSubmit}>
           <div className={styles.flex}>
             <div>
@@ -125,11 +124,11 @@ const ContactPage = () => {
           <ValidationError errors={state.errors} />
 
           {submissionStatus === 'success' && (
-            <p className={styles.successMessage}>Form submitted successfully!</p>
+            <p className={styles.successMessage}>I got it.thanks for reaching out!</p>
           )}
 
           {submissionStatus === 'error' && (
-            <p className={styles.errorMessage}>Form submission failed. Please try again later.</p>
+            <p className={styles.errorMessage}>Oops! i got error. Please try again.</p>
           )}
         </form>
       </div>

@@ -30,7 +30,7 @@ const Bottombar = () => {
       <div className={styles.container}>
         <div className={styles.section}>
           <UpdateIcon className={styles.icon} />
-          <p>V 2.1.9</p>
+          <p>V 2.2.9</p>
         </div>
         <div className={styles.section}>
           <NextjsIcon className={styles.icon} />
