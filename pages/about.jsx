@@ -5,8 +5,6 @@ const AboutPage = () => {
     <>
       <h3>A Little Bit About Me</h3>
       <br />
-      <h7>this section is under development so wait for it.</h7>
-
       <header className={styles.masthead}>
         <p className={styles.mastheadintro}>Hi I'm</p>
         <h1 className={styles.mastheadheading}>Wrake</h1>
