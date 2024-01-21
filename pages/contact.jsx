@@ -1,29 +1,39 @@
 import { useState } from 'react';
 import ContactCode from '../components/ContactCode';
 import styles from '../styles/ContactPage.module.css';
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactPage = () => {
+
+  const [state, handleSubmit] = useForm('mbjndrqj');
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
-  const submitForm = async (e) => {
-    e.preventDefault();
-    console.log(process.env.NEXT_PUBLIC_API_URL);
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
-      method: 'POST',
-      body: JSON.stringify({ name, email, subject, message }),
-    });
-    if (res.ok) {
+  const handleFormSubmit = async (e) => {
+    e?.preventDefault();
+
+    const result = await handleSubmit(e);
+
+    if (state.succeeded) {
+      setSubmissionStatus('success');
       alert('Your response has been received!');
       setName('');
       setEmail('');
       setSubject('');
       setMessage('');
     } else {
-      alert('There was an error. Please try again in a while.');
+      setSubmissionStatus('error');
+      alert('Your response has not been received!');
     }
+
+    // Clear the submission status after 5 seconds
+    setTimeout(() => {
+      setSubmissionStatus(null);
+    }, 5000);
   };
 
   return (
@@ -35,7 +45,7 @@ const ContactPage = () => {
       <div>
         <h3 className={styles.heading}>Or Fill Out This Form</h3>
         <h5 className={styles.heading}>currently under upadation.</h5>
-        <form className={styles.form} onSubmit={submitForm}>
+        <form method='POST' className={styles.form} onSubmit={handleFormSubmit}>
           <div className={styles.flex}>
             <div>
               <label htmlFor="name">Name</label>
@@ -48,6 +58,11 @@ const ContactPage = () => {
                 required
                 className={styles.inputfields}
               />
+              <ValidationError
+                prefix="Name"
+                field="name"
+                errors={state.errors}
+              />
             </div>
             <div>
               <label htmlFor="email">Email</label>
@@ -59,6 +74,11 @@ const ContactPage = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
               />
             </div>
           </div>
@@ -73,6 +93,11 @@ const ContactPage = () => {
               onChange={(e) => setSubject(e.target.value)}
               required
             />
+            <ValidationError
+              prefix="Subject"
+              field="subject"
+              errors={state.errors}
+            />
           </div>
           <div>
             <label htmlFor="message">Message</label>
@@ -86,8 +111,26 @@ const ContactPage = () => {
               onChange={(e) => setMessage(e.target.value)}
               required
             ></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
-          <button type="submit">Submit</button>
+          <div>
+            <button type="submit" disabled={state.submitting}>
+              Submit
+            </button>
+          </div>
+          <ValidationError errors={state.errors} />
+
+          {submissionStatus === 'success' && (
+            <p className={styles.successMessage}>Form submitted successfully!</p>
+          )}
+
+          {submissionStatus === 'error' && (
+            <p className={styles.errorMessage}>Form submission failed. Please try again later.</p>
+          )}
         </form>
       </div>
     </div>
@@ -102,7 +145,114 @@ export async function getStaticProps() {
 
 export default ContactPage;
 
-// this section is from the testing code ---------------------------------
+// default code ############################################################################################################
+// import { useState } from 'react';
+// import ContactCode from '../components/ContactCode';
+// import styles from '../styles/ContactPage.module.css';
+
+// const ContactPage = () => {
+//   const [name, setName] = useState('');
+//   const [email, setEmail] = useState('');
+//   const [subject, setSubject] = useState('');
+//   const [message, setMessage] = useState('');
+
+//   const submitForm = async (e) => {
+//     e.preventDefault();
+//     console.log(process.env.NEXT_PUBLIC_API_URL);
+//     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
+//       method: 'POST',
+//       body: JSON.stringify({ name, email, subject, message }),
+//     });
+//     if (res.ok) {
+//       alert('Your response has been received!');
+//       setName('');
+//       setEmail('');
+//       setSubject('');
+//       setMessage('');
+//     } else {
+//       alert('There was an error. Please try again in a while.');
+//     }
+//   };
+
+//   return (
+//     <div className={styles.container}>
+//       <div>
+//         <h3 className={styles.heading}>Reach Out Via Socials</h3>
+//         <ContactCode />
+//       </div>
+//       <div>
+//         <h3 className={styles.heading}>Or Fill Out This Form</h3>
+//         <h5 className={styles.heading}>currently under upadation.</h5>
+//         <form className={styles.form} onSubmit={submitForm}>
+//           <div className={styles.flex}>
+//             <div>
+//               <label htmlFor="name">Name</label>
+//               <input
+//                 type="text"
+//                 name="name"
+//                 id="name"
+//                 value={name}
+//                 onChange={(e) => setName(e.target.value)}
+//                 required
+//                 className={styles.inputfields}
+//               />
+//             </div>
+//             <div>
+//               <label htmlFor="email">Email</label>
+//               <input
+//                 className={styles.inputfields}
+//                 type="email"
+//                 name="email"
+//                 id="email"
+//                 value={email}
+//                 onChange={(e) => setEmail(e.target.value)}
+//                 required
+//               />
+//             </div>
+//           </div>
+//           <div>
+//             <label htmlFor="name">Subject</label>
+//             <input
+//               className={styles.inputfields}
+//               type="text"
+//               name="subject"
+//               id="subject"
+//               value={subject}
+//               onChange={(e) => setSubject(e.target.value)}
+//               required
+//             />
+//           </div>
+//           <div>
+//             <label htmlFor="message">Message</label>
+//             <textarea
+//               className={styles.inputfields}
+//               type="message"
+//               name="message"
+//               id="message"
+//               rows="5"
+//               value={message}
+//               onChange={(e) => setMessage(e.target.value)}
+//               required
+//             ></textarea>
+//           </div>
+//           <button type="submit">Submit</button>
+//         </form>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export async function getStaticProps() {
+//   return {
+//     props: { title: 'Contact' },
+//   };
+// }
+
+// export default ContactPage;
+//############################################################################################################
+
+
+// for nodemailer this section is from the testing code ---------------------------------
 
 // // import { useState } from 'react';
 // // import ContactCode from '../components/ContactCode';

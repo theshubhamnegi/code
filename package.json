@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@notionhq/client": "^0.2.2",
     "next": "^12.0.6",
     "react": "^17.0.2",
