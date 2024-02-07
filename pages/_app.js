@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-      <link rel="icon" type="image/ico" sizes="any" href="/favicon.ico" />
+      <link rel="icon" type="image/png" sizes="any" href="/vscode_icon.png" />
       </Head>
       <Heads title={`Shubham Negi | ${pageProps.title}`} />
       <Component {...pageProps} />
