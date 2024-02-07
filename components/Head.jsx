@@ -4,7 +4,7 @@ import Icons from './icons/CodeIcon';
 const CustomHead = ({ title }) => {
   return (
     <Head>
-      <img src={Icons} alt="" srcset="" />
+      <img src={Icons} alt={Icons} srcset="Icons" />
       <title>{title}</title>
     </Head>
   );
