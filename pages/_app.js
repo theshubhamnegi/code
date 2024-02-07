@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
-import Head from "../components/Head";
+import Heads from "../components/Head";
 import "../styles/globals.css";
 import "../styles/themes.css"; 
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
 
@@ -17,7 +18,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <Head title={`Shubham Negi | ${pageProps.title}`} />
+      <Head>
+      <link rel="icon" type="image/ico" sizes="any" href="/favicon.ico" />
+      </Head>
+      <Heads title={`Shubham Negi | ${pageProps.title}`} />
       <Component {...pageProps} />
     </Layout>
   );
