@@ -3,7 +3,48 @@ import styles from "../styles/Titlebar.module.css";
 
 import vscode from "../public/vscode_icon.png";
 
+import { useState } from "react";
+
 const Titlebar = () => {
+
+    const [isFullScreen, setIsFullScreen] = useState(false);
+  
+    const toggleFullScreen = () => {
+      const element = document.documentElement;
+      if (!isFullScreen) {
+        if (element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if (element.mozRequestFullScreen) { // Firefox
+          element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullscreen) { // Chrome, Safari and Opera
+          element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) { // IE/Edge
+          element.msRequestFullscreen();
+        }
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      }
+      setIsFullScreen(!isFullScreen);
+    };
+
+    const closetab = () => {
+        window.close();
+    }
+
+    const minimizewindow = () => {
+      var currentUrl = window.location.href;      
+      window.open(currentUrl, '', 'width=600,height=400,top=100,left=100');    
+      window.close();
+    }
+
   return (
     <section className={styles.titlebar}>
       {/* <Image
@@ -33,9 +74,9 @@ const Titlebar = () => {
       </div>
       <p className={styles.title}>Shubham Negi - Visual Studio Code</p>
       <div className={styles.windowButtons}>
-        <span className={styles.minimize}></span>
-        <span className={styles.maximize}></span>
-        <span className={styles.close}></span>
+        <span className={styles.minimize} onClick={minimizewindow}></span>
+        <span className={styles.maximize} onClick={toggleFullScreen}></span>
+        <span className={styles.close} onClick={closetab}></span>
       </div>
     </section>
   );
